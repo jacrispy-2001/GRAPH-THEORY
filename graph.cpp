@@ -9,9 +9,11 @@ vector<int> G[N];
 
 int main(){
     
+    /* taking input nodes and edges*/
     int n,m;
     cin>>n>>m;
     
+    /* storing the nodes and edge relation in an array*/
     for (int i = 0; i <m; i++)
     {
         int a,b;
@@ -19,6 +21,8 @@ int main(){
         G[a].push_back(b);
         G[b].push_back(a);
     }
+    
+    /* printing the graph*/
 
     for (int i = 1; i <=n ; i++)
     {
