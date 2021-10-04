@@ -42,7 +42,7 @@ int multiply(int x,int y){
         return (x + multiply(x, y - 1));
     } 
     if(y < 0 ){ 
-        return -multiply(x, -y);
+        return -1*multiply(x, -y);
     }
 }
 int and_check(int a,int b){
@@ -73,11 +73,13 @@ int hcf(int a,int b){
     if (and_check(divide_check(a,f1),divide_check(b,f1))){
             
             f1_counter++;
+            f2_counter*2;
             return hcf(a/f1,b/f1);
     }
     if (and_check(divide_check(a,f2),divide_check(b,f2))){
              
             f2_counter++; 
+            f1_counter++;
             return hcf(a/f2,b/f2);
     }
     else{
