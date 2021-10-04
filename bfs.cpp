@@ -40,6 +40,10 @@ int main() {
         }
     }
     
+    for(int i=1;i<=n;i++){
+        cout<<vis[i]<<"\n"
+        }
+    
     for (int i = 1; i <=n; i++)
     {
         cout<<i<<"--->"<<dis[i]<<"\n";
