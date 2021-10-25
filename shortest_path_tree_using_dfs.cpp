@@ -41,6 +41,7 @@ int main() {
   
     for (int i = 1; i <=n; i++)
     {
+        cout<<vis[i]<<" "<<"\n";
         cout<<dis[i]<<"  ";
     }
     
