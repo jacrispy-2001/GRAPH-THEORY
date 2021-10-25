@@ -37,6 +37,9 @@ int main() {
             count_conn_comp++;
             dfs(i);
         }
+        else{
+            cout<<"It is visited"<<"\n";
+        }
     }
 
     cout<<"count ofconnected_components = "<<count_conn_comp<<"\n";
