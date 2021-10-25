@@ -9,14 +9,13 @@ bool vis[N]={0};
 bool parent[1005]={0};
 
 void dfs(int a){
-		vis[a]=1;
-		for(auto elm:g[a]){
-			parent[elm]=a;
-			if(!vis[elm]){
-				vis[elm]=1;
-				dfs(elm);
-			}
-        }
+	vis[a]=1;
+	for(auto elm:g[a]){
+	parent[elm]=a;
+	if(!vis[elm]){
+		vis[elm]=1;
+		dfs(elm);
+	}
 }
 	
 int main(){
