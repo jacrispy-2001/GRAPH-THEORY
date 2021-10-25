@@ -1,4 +1,6 @@
-#include <bits/stdc++.h> 
+#include <bits/stdc++.h>
+#include <vector>
+#include<math>
 using namespace std; 
 
 const int N=1e5;
